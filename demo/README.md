@@ -17,7 +17,7 @@ Open http://localhost:3001. Use `localhost` or HTTPS: Fiber WASM requires a secu
 
 ## Run the Testnet flow
 
-1. Start Buyer A and Seller C in separate browser tabs. Keep one tab per saved node.
+1. Start Buyer A and Seller C in the same demo tab. Do not start either saved node in another tab at the same time.
 2. Fund each displayed address with more than 500 Testnet CKB, plus enough for the on-chain transaction fee. Use the linked Testnet faucet; never send Mainnet funds.
 3. Open a 500 CKB channel for each node through Bottle and refresh status until both report `CHANNEL_READY`. Confirmation can take several minutes.
 4. On Seller, edit the sample brief if desired, then select **Encrypt & create 1 CKB Invoice**. Copy the generated public offer.
@@ -26,6 +26,15 @@ Open http://localhost:3001. Use `localhost` or HTTPS: Fiber WASM requires a secu
 7. After success, select **Decrypt result**. Confirm that the full brief appears and the receipt shows the amount, fee, and payment hash.
 
 The app requires both channels to be ready and verifies the invoice's Testnet currency, 1 CKB amount, payment hash, and Bottle route before submission. The configured maximum routing fee is 1 CKB; the receipt displays the actual fee.
+
+## Proof screenshots
+
+These screenshots show one completed live Testnet demo session. The receipt records the Fiber UI result; it is not an independent on-chain verification. The images contain no payment preimage or private key.
+
+- [Both channels ready and encrypted offer created](proof/01-channel-ready-encrypted-offer.png)
+- [Buyer rejects decryption before payment](proof/02-offer-rejected-before-payment.png)
+- [Successful 1 CKB payment receipt and payment hash](proof/03-payment-receipt.png)
+- [Buyer decrypts the original research brief](proof/04-decrypted-brief.png)
 
 ## Recovery and data handling
 

@@ -6,6 +6,8 @@ A browser demo for selling an encrypted CKB Testnet research brief through a Fib
 
 The app is in [`demo/`](demo/README.md). It is based on the official [encrypted-data-payment starter kit](https://www.fiber.world/downloads/fiber-encrypted-data-payment.zip), adapted with a CKB research-brief use case and sample content.
 
+Quest 2 proof screenshots: [`demo/proof/`](demo/proof/).
+
 Run it locally with Node.js 22.18 or newer:
 
 ```sh
