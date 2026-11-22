@@ -1,7 +1,9 @@
 # Fiber Testnet: Pay to Unlock Encrypted Data
 
-**Report date:** 22 November 2026  
-**Basis:** User-provided screenshots of the Fiber interactive tutorial, “Unlock Encrypted Data with a Fiber Payment”  
+**Report date:** 22 November 2026
+
+**Basis:** User-provided screenshots of the Fiber interactive tutorial, “Unlock Encrypted Data with a Fiber Payment”
+
 **Status:** The screenshots show the tutorial reaching its paid and decrypted result states. This report does not independently verify the payment against a CKB transaction or Fiber node record.
 
 ## Summary
