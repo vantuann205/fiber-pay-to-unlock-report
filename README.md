@@ -20,6 +20,6 @@ Open http://localhost:3001. The live payment flow uses Fiber and CKB Testnet. Se
 
 ## Basic quest report
 
-Open the [Fiber Testnet tutorial report](report/fiber-testnet-pay-to-unlock.md).
+Open the [Fiber Testnet tutorial report](report/fiber-testnet-pay-to-unlock.md) and the [Quest 1 tutorial screenshots](report/quest-1-proof/).
 
-The original screenshots are intentionally not published because they expose the AES payment preimage/decryption key and decrypted sample content. The report records tutorial UI values and explicitly says the transaction was not independently verified on-chain.
+The decrypted-result screenshot redacts only the AES payment preimage. The 1 CKB receipt, full payment hash, and decrypted sample text remain visible. The report notes that the transaction was not independently verified on-chain.

@@ -18,7 +18,7 @@ The demonstration connects payment completion and delivery of the decryption key
 2. **Encrypt the result and create an invoice.** The seller enters a sample report. The tutorial uses AES-256-GCM, generates a 256-bit key and a 96-bit initialization vector, and uses the key as the invoice payment preimage. The encrypted result and invoice are packaged in the offer.
 3. **Transfer and validate the offer.** The buyer receives the offer JSON and checks the invoice network, amount, and payment hash before paying.
 4. **Pay over Fiber.** The payment screen shows an invoice amount of 1 CKB, a 0.001 CKB routing fee, and 1.001 CKB total paid. Its status is shown as “Paid.”
-5. **Decrypt after payment.** The tutorial returns the payment preimage to the buyer. Selecting “Decrypt result” uses that value as the AES key and displays the original sample report. The final screenshot shows the decrypted result and the payment preimage.
+5. **Decrypt after payment.** The tutorial returns the payment preimage to the buyer. Selecting “Decrypt result” uses that value as the AES key and displays the original sample report. The published decrypted-result screenshot keeps the sample text visible and redacts the preimage.
 
 ## What this demonstrates
 
@@ -47,15 +47,15 @@ These values are copied from the tutorial screens. They are not fee estimates or
 
 ## Security and evidence handling
 
-The submitted screenshots expose the payment preimage used as the AES decryption key and the decrypted sample content. The screenshots are therefore not included in this public repository. The preimage and full payment hash are also omitted from this report.
+The five tutorial screenshots are published in [`quest-1-proof/`](quest-1-proof/). The decrypted-result screenshot redacts only the payment preimage because it is also the AES decryption key. The 1 CKB receipt, full payment hash, and decrypted sample text remain visible for judging.
 
-Anyone who obtained the preimage from the screenshots may be able to decrypt the associated ciphertext. Treat that tutorial result as public, do not reuse its payment material, and generate a fresh key and invoice for another test.
+The transaction is on Testnet and its on-chain status has not been independently verified. Do not reuse the tutorial's payment material; generate a fresh key and invoice for another test.
 
 ## Limits
 
 - This is a guided Testnet tutorial scenario; it is not evidence of mainnet use or user adoption.
 - The report does not independently query a Fiber node, verify a CKB transaction, or validate the invoice cryptographically.
-- No transaction hash, full payment hash, or payment preimage is reproduced here.
+- The tutorial UI screenshots are evidence of the displayed flow; they do not independently establish a CKB transaction record.
 - The report is not a security audit of Fiber, AES-GCM, the tutorial implementation, or a production payment application.
 
 ## References
